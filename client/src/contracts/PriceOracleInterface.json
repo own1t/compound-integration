@@ -1,0 +1,314 @@
+{
+  "contractName": "PriceOracleInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "getUnderlyingPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol\":\"PriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol\":{\"keccak256\":\"0xebcc617a00add4fa536e0d1d2599551ff5866b7c2284af2789e040b045af3f29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05d9c56615ae91034a3efa86c7ede3527c98ee64fa933b4c5d66be283c330fef\",\"dweb:/ipfs/QmWE9D5QpoqxPAULssVjpZieKCPbVQZN7ich9TxKAh8wnQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.3;\n\ninterface PriceOracleInterface {\n    function getUnderlyingPrice(address asset) external view returns (uint256);\n}\n",
+  "sourcePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+  "ast": {
+    "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+    "exportedSymbols": {
+      "PriceOracleInterface": [
+        1986
+      ]
+    },
+    "id": 1987,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1978,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1986,
+        "linearizedBaseContracts": [
+          1986
+        ],
+        "name": "PriceOracleInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "fc57d4df",
+            "id": 1985,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUnderlyingPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1981,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1980,
+                  "mutability": "mutable",
+                  "name": "asset",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1985,
+                  "src": "122:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1979,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "122:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "121:15:7"
+            },
+            "returnParameters": {
+              "id": 1984,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1983,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1985,
+                  "src": "160:7:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1982,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "160:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "159:9:7"
+            },
+            "scope": 1986,
+            "src": "94:75:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1987,
+        "src": "57:114:7"
+      }
+    ],
+    "src": "32:140:7"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+      "exportedSymbols": {
+        "PriceOracleInterface": [
+          1986
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 1978,
+        "name": "PragmaDirective",
+        "src": "32:23:7"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1986
+          ],
+          "name": "PriceOracleInterface",
+          "scope": 1987
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "fc57d4df",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getUnderlyingPrice",
+              "scope": 1986,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "asset",
+                      "scope": 1985,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1979,
+                        "name": "ElementaryTypeName",
+                        "src": "122:7:7"
+                      }
+                    ],
+                    "id": 1980,
+                    "name": "VariableDeclaration",
+                    "src": "122:13:7"
+                  }
+                ],
+                "id": 1981,
+                "name": "ParameterList",
+                "src": "121:15:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 1985,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1982,
+                        "name": "ElementaryTypeName",
+                        "src": "160:7:7"
+                      }
+                    ],
+                    "id": 1983,
+                    "name": "VariableDeclaration",
+                    "src": "160:7:7"
+                  }
+                ],
+                "id": 1984,
+                "name": "ParameterList",
+                "src": "159:9:7"
+              }
+            ],
+            "id": 1985,
+            "name": "FunctionDefinition",
+            "src": "94:75:7"
+          }
+        ],
+        "id": 1986,
+        "name": "ContractDefinition",
+        "src": "57:114:7"
+      }
+    ],
+    "id": 1987,
+    "name": "SourceUnit",
+    "src": "32:140:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-14T01:41:02.576Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
