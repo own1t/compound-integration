@@ -77,7 +77,7 @@ export const NavBox = styled.div`
   > h4 {
     color: #000;
     margin: 0;
-    margin-right: 3px;
+    margin-right: 5px;
     font-weight: 400;
   }
 
@@ -111,7 +111,7 @@ export const NavBox2 = styled.div`
   > h4 {
     color: #fff;
     margin: 0;
-    margin-right: 3px;
+    margin-right: 5px;
     font-weight: 400;
   }
 

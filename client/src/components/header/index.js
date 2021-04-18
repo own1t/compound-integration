@@ -35,7 +35,6 @@ const Header = () => {
             <a
               href={`//rinkeby.etherscan.io/address/${contractAddress}`}
               target="_blank"
-              without
               rel="noopener noreferrer"
             >
               {truncate(contractAddress, 15)}
@@ -47,7 +46,6 @@ const Header = () => {
             <a
               href={`//rinkeby.etherscan.io/address/${user}`}
               target="_blank"
-              without
               rel="noopener noreferrer"
             >
               {truncate(user, 13)}

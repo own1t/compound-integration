@@ -52,10 +52,11 @@ export const LongCard = styled.div`
 
   > h2 {
     position: absolute;
-    top: -200px;
-    left: -20px;
+    /* top: -200px; */
+    left: -0px;
+    bottom: -250px;
     opacity: 0.2;
-    font-size: 13em;
+    font-size: 15em;
     color: #04d394;
     pointer-events: none;
   }
@@ -94,6 +95,7 @@ export const InputGroupContainer = styled.div`
     width: 40%;
     height: 54px;
     outline: none;
+    background: transparent;
     padding: 0 25px;
     border: none;
     border-right: 1px solid #000;
@@ -110,7 +112,7 @@ export const Select = styled.select`
   position: relative;
   left: 3px;
   outline: none;
-  background: #fff;
+  background: transparent;
   font-size: 18px;
   width: 45%;
   margin: -2px;

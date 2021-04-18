@@ -68,11 +68,9 @@ export const ContentLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* flex-wrap: wrap; */
   z-index: 1;
   width: 100%;
   height: 100%;
-  /* left: 0; */
   border-radius: 5px;
   color: #fff;
 `;

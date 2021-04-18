@@ -150,4 +150,6 @@ export const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-export const formatNumber = (number) => `${new Number(number).toFixed(2)}`;
+export const formatNumber = (number) => {
+  return Number.parseFloat(number).toFixed(2);
+};
