@@ -1,6 +1,6 @@
 ![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-1.png?raw=true)
 
-![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-2.png?raw=true)
+![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-4.png?raw=true)
 
 ![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-3.png?raw=true)
 
