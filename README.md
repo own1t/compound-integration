@@ -1,8 +1,8 @@
-![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-5)
+![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-5.png?raw=true)
 
-![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-6)
+![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-6.png?raw=true)
 
-![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-7)
+![alt text](https://github.com/own1t/compound-integration/blob/main/previews/compound-7.png?raw=true)
 
 ## Compound Integration
 
