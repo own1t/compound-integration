@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import { useDispatch } from "react-redux";
-import { SET_CONTRACT_ADDRESS, SET_USER } from "../../states/appSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  GET_USER,
+  SET_CONTRACT_ADDRESS,
+  SET_USER,
+} from "../../states/appSlice";
 
 import { getWeb3, getContracts } from "../../utils";
 
@@ -13,6 +17,8 @@ import LoadingContainer from "./LoadingContainer";
 
 const App = () => {
   const dispatch = useDispatch();
+
+  const user = useSelector(GET_USER);
 
   const [web3, setWeb3] = useState(undefined);
   const [accounts, setAccounts] = useState([]);
@@ -41,7 +47,7 @@ const App = () => {
       setAccounts(accounts);
     };
     init();
-  }, []);
+  }, [user]);
 
   return (
     <>

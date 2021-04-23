@@ -107,9 +107,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_comptroller\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_priceOracle\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_cETHAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"_getCompAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_getCompBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"cTokenAddress\",\"type\":\"address\"}],\"name\":\"_getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"cETH\",\"outputs\":[{\"internalType\":\"contract CETHInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"comptroller\",\"outputs\":[{\"internalType\":\"contract ComptrollerInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceOracle\",\"outputs\":[{\"internalType\":\"contract PriceOracleInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/compound/contracts/Compound.sol\":\"Compound\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol\":{\"keccak256\":\"0x6b9786fbc5869f6a740752ab4468a33c24c76a6f9c6c0261eca8914b2968f10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5125d54e68cd8e25ce990c50757219874a8e05cb352954173561075cf635b784\",\"dweb:/ipfs/QmeAM3yEMTJh4WF19MPrcMhEf4Xgj5YJYzGXGpeXJSs91X\"]},\"/Users/ryan/Desktop/Projects/compound/contracts/CTokenInterface.sol\":{\"keccak256\":\"0x5e967d2e03938ea648a921444509d4040d02e2a837897dc178e51a2c3d4ff951\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1d380e8537be59e753cda805b8f7baaa4904e5b11b61d6198e277250cf4c41e2\",\"dweb:/ipfs/QmS6UEiNzc8fcF243wx1ZHstZbKxqpVKQ25tisxgJa6iuy\"]},\"/Users/ryan/Desktop/Projects/compound/contracts/Compound.sol\":{\"keccak256\":\"0xb9d2eb56df4c8b6f91ccd81eaaf5e6961622cdfe5de0e3fec2d1fdf70f3ce684\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1daaaece715a051b246d654e79b2ef93a6e1fd0b6f483244e471405cb86a5678\",\"dweb:/ipfs/QmZGmqVQAL5E1UxzmPXD2BwkM8xWVdzuifxhh5GJXqV7kK\"]},\"/Users/ryan/Desktop/Projects/compound/contracts/ComptrollerInterface.sol\":{\"keccak256\":\"0xf72838ca52d4a885bfe62ce6075f6ce56edb9bdcc75586bd50698b45e6da858f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a980e16c233acbb3d1a2bb537fac8bc1f2873763c60926596321591027e8f9c2\",\"dweb:/ipfs/QmTLbA9bvvZtv5uzYEdNPX7XxLpxX3Gy4jFPhEmifNdzJE\"]},\"/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol\":{\"keccak256\":\"0xebcc617a00add4fa536e0d1d2599551ff5866b7c2284af2789e040b045af3f29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05d9c56615ae91034a3efa86c7ede3527c98ee64fa933b4c5d66be283c330fef\",\"dweb:/ipfs/QmWE9D5QpoqxPAULssVjpZieKCPbVQZN7ich9TxKAh8wnQ\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516107f43803806107f483398181016040528101906100329190610111565b826000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506101a9565b60008151905061010b81610192565b92915050565b60008060006060848603121561012657600080fd5b6000610134868287016100fc565b9350506020610145868287016100fc565b9250506040610156868287016100fc565b9150509250925092565b600061016b82610172565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61019b81610160565b81146101a657600080fd5b50565b61063c806101b86000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80632630c12f14610067578063512ed506146100855780635fe3b567146100a35780637ad3fca9146100c1578063a1b4d011146100df578063be274d32146100fd575b600080fd5b61006f61012d565b60405161007c91906104fa565b60405180910390f35b61008d610153565b60405161009a91906104a9565b60405180910390f35b6100ab6101f9565b6040516100b891906104df565b60405180910390f35b6100c961021d565b6040516100d69190610515565b60405180910390f35b6100e76102c5565b6040516100f491906104c4565b60405180910390f35b610117600480360381019061011291906103e3565b6102eb565b6040516101249190610515565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639d1b5a0a6040518163ffffffff1660e01b815260040160206040518083038186803b1580156101bc57600080fd5b505afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f4919061040c565b905090565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080610228610153565b9050600081905060008173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b815260040161026a91906104a9565b60206040518083038186803b15801561028257600080fd5b505afa158015610296573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ba9190610435565b905080935050505090565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fc57d4df846040518263ffffffff1660e01b815260040161034991906104a9565b60206040518083038186803b15801561036157600080fd5b505afa158015610375573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103999190610435565b905080915050919050565b6000813590506103b3816105d8565b92915050565b6000815190506103c8816105d8565b92915050565b6000815190506103dd816105ef565b92915050565b6000602082840312156103f557600080fd5b6000610403848285016103a4565b91505092915050565b60006020828403121561041e57600080fd5b600061042c848285016103b9565b91505092915050565b60006020828403121561044757600080fd5b6000610455848285016103ce565b91505092915050565b61046781610530565b82525050565b6104768161056c565b82525050565b61048581610590565b82525050565b610494816105b4565b82525050565b6104a381610562565b82525050565b60006020820190506104be600083018461045e565b92915050565b60006020820190506104d9600083018461046d565b92915050565b60006020820190506104f4600083018461047c565b92915050565b600060208201905061050f600083018461048b565b92915050565b600060208201905061052a600083018461049a565b92915050565b600061053b82610542565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105778261057e565b9050919050565b600061058982610542565b9050919050565b600061059b826105a2565b9050919050565b60006105ad82610542565b9050919050565b60006105bf826105c6565b9050919050565b60006105d182610542565b9050919050565b6105e181610530565b81146105ec57600080fd5b50565b6105f881610562565b811461060357600080fd5b5056fea264697066735822122046e43932fd149c8cd7c4beef0d32eafd53b584e7128a921b1f9563a4aabcfb1764736f6c63430007060033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80632630c12f14610067578063512ed506146100855780635fe3b567146100a35780637ad3fca9146100c1578063a1b4d011146100df578063be274d32146100fd575b600080fd5b61006f61012d565b60405161007c91906104fa565b60405180910390f35b61008d610153565b60405161009a91906104a9565b60405180910390f35b6100ab6101f9565b6040516100b891906104df565b60405180910390f35b6100c961021d565b6040516100d69190610515565b60405180910390f35b6100e76102c5565b6040516100f491906104c4565b60405180910390f35b610117600480360381019061011291906103e3565b6102eb565b6040516101249190610515565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639d1b5a0a6040518163ffffffff1660e01b815260040160206040518083038186803b1580156101bc57600080fd5b505afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f4919061040c565b905090565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080610228610153565b9050600081905060008173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b815260040161026a91906104a9565b60206040518083038186803b15801561028257600080fd5b505afa158015610296573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ba9190610435565b905080935050505090565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fc57d4df846040518263ffffffff1660e01b815260040161034991906104a9565b60206040518083038186803b15801561036157600080fd5b505afa158015610375573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103999190610435565b905080915050919050565b6000813590506103b3816105d8565b92915050565b6000815190506103c8816105d8565b92915050565b6000815190506103dd816105ef565b92915050565b6000602082840312156103f557600080fd5b6000610403848285016103a4565b91505092915050565b60006020828403121561041e57600080fd5b600061042c848285016103b9565b91505092915050565b60006020828403121561044757600080fd5b6000610455848285016103ce565b91505092915050565b61046781610530565b82525050565b6104768161056c565b82525050565b61048581610590565b82525050565b610494816105b4565b82525050565b6104a381610562565b82525050565b60006020820190506104be600083018461045e565b92915050565b60006020820190506104d9600083018461046d565b92915050565b60006020820190506104f4600083018461047c565b92915050565b600060208201905061050f600083018461048b565b92915050565b600060208201905061052a600083018461049a565b92915050565b600061053b82610542565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105778261057e565b9050919050565b600061058982610542565b9050919050565b600061059b826105a2565b9050919050565b60006105ad82610542565b9050919050565b60006105bf826105c6565b9050919050565b60006105d182610542565b9050919050565b6105e181610530565b81146105ec57600080fd5b50565b6105f881610562565b811461060357600080fd5b5056fea264697066735822122046e43932fd149c8cd7c4beef0d32eafd53b584e7128a921b1f9563a4aabcfb1764736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_comptroller\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_priceOracle\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_cETHAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"_getCompAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_getCompBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"cTokenAddress\",\"type\":\"address\"}],\"name\":\"_getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"cETH\",\"outputs\":[{\"internalType\":\"contract CETHInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"comptroller\",\"outputs\":[{\"internalType\":\"contract ComptrollerInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceOracle\",\"outputs\":[{\"internalType\":\"contract PriceOracleInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/Compound.sol\":\"Compound\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol\":{\"keccak256\":\"0x6b9786fbc5869f6a740752ab4468a33c24c76a6f9c6c0261eca8914b2968f10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5125d54e68cd8e25ce990c50757219874a8e05cb352954173561075cf635b784\",\"dweb:/ipfs/QmeAM3yEMTJh4WF19MPrcMhEf4Xgj5YJYzGXGpeXJSs91X\"]},\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CTokenInterface.sol\":{\"keccak256\":\"0x5e967d2e03938ea648a921444509d4040d02e2a837897dc178e51a2c3d4ff951\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1d380e8537be59e753cda805b8f7baaa4904e5b11b61d6198e277250cf4c41e2\",\"dweb:/ipfs/QmS6UEiNzc8fcF243wx1ZHstZbKxqpVKQ25tisxgJa6iuy\"]},\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/Compound.sol\":{\"keccak256\":\"0xb9d2eb56df4c8b6f91ccd81eaaf5e6961622cdfe5de0e3fec2d1fdf70f3ce684\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1daaaece715a051b246d654e79b2ef93a6e1fd0b6f483244e471405cb86a5678\",\"dweb:/ipfs/QmZGmqVQAL5E1UxzmPXD2BwkM8xWVdzuifxhh5GJXqV7kK\"]},\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/ComptrollerInterface.sol\":{\"keccak256\":\"0xf72838ca52d4a885bfe62ce6075f6ce56edb9bdcc75586bd50698b45e6da858f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a980e16c233acbb3d1a2bb537fac8bc1f2873763c60926596321591027e8f9c2\",\"dweb:/ipfs/QmTLbA9bvvZtv5uzYEdNPX7XxLpxX3Gy4jFPhEmifNdzJE\"]},\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol\":{\"keccak256\":\"0xebcc617a00add4fa536e0d1d2599551ff5866b7c2284af2789e040b045af3f29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05d9c56615ae91034a3efa86c7ede3527c98ee64fa933b4c5d66be283c330fef\",\"dweb:/ipfs/QmWE9D5QpoqxPAULssVjpZieKCPbVQZN7ich9TxKAh8wnQ\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516107f43803806107f483398181016040528101906100329190610111565b826000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506101a9565b60008151905061010b81610192565b92915050565b60008060006060848603121561012657600080fd5b6000610134868287016100fc565b9350506020610145868287016100fc565b9250506040610156868287016100fc565b9150509250925092565b600061016b82610172565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b61019b81610160565b81146101a657600080fd5b50565b61063c806101b86000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80632630c12f14610067578063512ed506146100855780635fe3b567146100a35780637ad3fca9146100c1578063a1b4d011146100df578063be274d32146100fd575b600080fd5b61006f61012d565b60405161007c91906104fa565b60405180910390f35b61008d610153565b60405161009a91906104a9565b60405180910390f35b6100ab6101f9565b6040516100b891906104df565b60405180910390f35b6100c961021d565b6040516100d69190610515565b60405180910390f35b6100e76102c5565b6040516100f491906104c4565b60405180910390f35b610117600480360381019061011291906103e3565b6102eb565b6040516101249190610515565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639d1b5a0a6040518163ffffffff1660e01b815260040160206040518083038186803b1580156101bc57600080fd5b505afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f4919061040c565b905090565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080610228610153565b9050600081905060008173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b815260040161026a91906104a9565b60206040518083038186803b15801561028257600080fd5b505afa158015610296573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ba9190610435565b905080935050505090565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fc57d4df846040518263ffffffff1660e01b815260040161034991906104a9565b60206040518083038186803b15801561036157600080fd5b505afa158015610375573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103999190610435565b905080915050919050565b6000813590506103b3816105d8565b92915050565b6000815190506103c8816105d8565b92915050565b6000815190506103dd816105ef565b92915050565b6000602082840312156103f557600080fd5b6000610403848285016103a4565b91505092915050565b60006020828403121561041e57600080fd5b600061042c848285016103b9565b91505092915050565b60006020828403121561044757600080fd5b6000610455848285016103ce565b91505092915050565b61046781610530565b82525050565b6104768161056c565b82525050565b61048581610590565b82525050565b610494816105b4565b82525050565b6104a381610562565b82525050565b60006020820190506104be600083018461045e565b92915050565b60006020820190506104d9600083018461046d565b92915050565b60006020820190506104f4600083018461047c565b92915050565b600060208201905061050f600083018461048b565b92915050565b600060208201905061052a600083018461049a565b92915050565b600061053b82610542565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105778261057e565b9050919050565b600061058982610542565b9050919050565b600061059b826105a2565b9050919050565b60006105ad82610542565b9050919050565b60006105bf826105c6565b9050919050565b60006105d182610542565b9050919050565b6105e181610530565b81146105ec57600080fd5b50565b6105f881610562565b811461060357600080fd5b5056fea2646970667358221220abf4a4d6a24e87c08d474eb6e210e342898c5b0bec9e2675493cd9da15033c6f64736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80632630c12f14610067578063512ed506146100855780635fe3b567146100a35780637ad3fca9146100c1578063a1b4d011146100df578063be274d32146100fd575b600080fd5b61006f61012d565b60405161007c91906104fa565b60405180910390f35b61008d610153565b60405161009a91906104a9565b60405180910390f35b6100ab6101f9565b6040516100b891906104df565b60405180910390f35b6100c961021d565b6040516100d69190610515565b60405180910390f35b6100e76102c5565b6040516100f491906104c4565b60405180910390f35b610117600480360381019061011291906103e3565b6102eb565b6040516101249190610515565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639d1b5a0a6040518163ffffffff1660e01b815260040160206040518083038186803b1580156101bc57600080fd5b505afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f4919061040c565b905090565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080610228610153565b9050600081905060008173ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b815260040161026a91906104a9565b60206040518083038186803b15801561028257600080fd5b505afa158015610296573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ba9190610435565b905080935050505090565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600080600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fc57d4df846040518263ffffffff1660e01b815260040161034991906104a9565b60206040518083038186803b15801561036157600080fd5b505afa158015610375573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103999190610435565b905080915050919050565b6000813590506103b3816105d8565b92915050565b6000815190506103c8816105d8565b92915050565b6000815190506103dd816105ef565b92915050565b6000602082840312156103f557600080fd5b6000610403848285016103a4565b91505092915050565b60006020828403121561041e57600080fd5b600061042c848285016103b9565b91505092915050565b60006020828403121561044757600080fd5b6000610455848285016103ce565b91505092915050565b61046781610530565b82525050565b6104768161056c565b82525050565b61048581610590565b82525050565b610494816105b4565b82525050565b6104a381610562565b82525050565b60006020820190506104be600083018461045e565b92915050565b60006020820190506104d9600083018461046d565b92915050565b60006020820190506104f4600083018461047c565b92915050565b600060208201905061050f600083018461048b565b92915050565b600060208201905061052a600083018461049a565b92915050565b600061053b82610542565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105778261057e565b9050919050565b600061058982610542565b9050919050565b600061059b826105a2565b9050919050565b60006105ad82610542565b9050919050565b60006105bf826105c6565b9050919050565b60006105d182610542565b9050919050565b6105e181610530565b81146105ec57600080fd5b50565b6105f881610562565b811461060357600080fd5b5056fea2646970667358221220abf4a4d6a24e87c08d474eb6e210e342898c5b0bec9e2675493cd9da15033c6f64736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [
     {
@@ -1705,7 +1705,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_contract$_ComptrollerInterface_$1957_to_t_address",
+                          "name": "convert_t_contract$_ComptrollerInterface_$1932_to_t_address",
                           "nodeType": "YulIdentifier",
                           "src": "1715:59:7"
                         },
@@ -1726,7 +1726,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_contract$_ComptrollerInterface_$1957_to_t_address_fromStack",
+            "name": "abi_encode_t_contract$_ComptrollerInterface_$1932_to_t_address_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1766,7 +1766,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_contract$_PriceOracleInterface_$1967_to_t_address",
+                          "name": "convert_t_contract$_PriceOracleInterface_$1942_to_t_address",
                           "nodeType": "YulIdentifier",
                           "src": "1910:59:7"
                         },
@@ -1787,7 +1787,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_contract$_PriceOracleInterface_$1967_to_t_address_fromStack",
+            "name": "abi_encode_t_contract$_PriceOracleInterface_$1942_to_t_address_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2158,7 +2158,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_contract$_ComptrollerInterface_$1957_to_t_address_fromStack",
+                      "name": "abi_encode_t_contract$_ComptrollerInterface_$1932_to_t_address_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "2782:72:7"
                     },
@@ -2170,7 +2170,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_contract$_ComptrollerInterface_$1957__to_t_address__fromStack_reversed",
+            "name": "abi_encode_tuple_t_contract$_ComptrollerInterface_$1932__to_t_address__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2268,7 +2268,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_contract$_PriceOracleInterface_$1967_to_t_address_fromStack",
+                      "name": "abi_encode_t_contract$_PriceOracleInterface_$1942_to_t_address_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "3068:72:7"
                     },
@@ -2280,7 +2280,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_contract$_PriceOracleInterface_$1967__to_t_address__fromStack_reversed",
+            "name": "abi_encode_tuple_t_contract$_PriceOracleInterface_$1942__to_t_address__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2699,7 +2699,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "convert_t_contract$_ComptrollerInterface_$1957_to_t_uint160",
+                      "name": "convert_t_contract$_ComptrollerInterface_$1932_to_t_uint160",
                       "nodeType": "YulIdentifier",
                       "src": "4149:59:7"
                     },
@@ -2716,7 +2716,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_ComptrollerInterface_$1957_to_t_address",
+            "name": "convert_t_contract$_ComptrollerInterface_$1932_to_t_address",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2770,7 +2770,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_ComptrollerInterface_$1957_to_t_uint160",
+            "name": "convert_t_contract$_ComptrollerInterface_$1932_to_t_uint160",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2807,7 +2807,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "convert_t_contract$_PriceOracleInterface_$1967_to_t_uint160",
+                      "name": "convert_t_contract$_PriceOracleInterface_$1942_to_t_uint160",
                       "nodeType": "YulIdentifier",
                       "src": "4487:59:7"
                     },
@@ -2824,7 +2824,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_PriceOracleInterface_$1967_to_t_address",
+            "name": "convert_t_contract$_PriceOracleInterface_$1942_to_t_address",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2878,7 +2878,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_PriceOracleInterface_$1967_to_t_uint160",
+            "name": "convert_t_contract$_PriceOracleInterface_$1942_to_t_uint160",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3102,7 +3102,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_uint256_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_address_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_contract$_CETHInterface_$29_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_CETHInterface_$29_to_t_address(value))\n    }\n\n    function abi_encode_t_contract$_ComptrollerInterface_$1957_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_ComptrollerInterface_$1957_to_t_address(value))\n    }\n\n    function abi_encode_t_contract$_PriceOracleInterface_$1967_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_PriceOracleInterface_$1967_to_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_CETHInterface_$29__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_CETHInterface_$29_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_ComptrollerInterface_$1957__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_ComptrollerInterface_$1957_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_PriceOracleInterface_$1967__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_PriceOracleInterface_$1967_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_contract$_CETHInterface_$29_to_t_address(value) -> converted {\n        converted := convert_t_contract$_CETHInterface_$29_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_CETHInterface_$29_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function convert_t_contract$_ComptrollerInterface_$1957_to_t_address(value) -> converted {\n        converted := convert_t_contract$_ComptrollerInterface_$1957_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_ComptrollerInterface_$1957_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function convert_t_contract$_PriceOracleInterface_$1967_to_t_address(value) -> converted {\n        converted := convert_t_contract$_PriceOracleInterface_$1967_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_PriceOracleInterface_$1967_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_uint256_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_address_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_contract$_CETHInterface_$29_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_CETHInterface_$29_to_t_address(value))\n    }\n\n    function abi_encode_t_contract$_ComptrollerInterface_$1932_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_ComptrollerInterface_$1932_to_t_address(value))\n    }\n\n    function abi_encode_t_contract$_PriceOracleInterface_$1942_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_PriceOracleInterface_$1942_to_t_address(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_CETHInterface_$29__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_CETHInterface_$29_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_ComptrollerInterface_$1932__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_ComptrollerInterface_$1932_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_PriceOracleInterface_$1942__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_PriceOracleInterface_$1942_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_contract$_CETHInterface_$29_to_t_address(value) -> converted {\n        converted := convert_t_contract$_CETHInterface_$29_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_CETHInterface_$29_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function convert_t_contract$_ComptrollerInterface_$1932_to_t_address(value) -> converted {\n        converted := convert_t_contract$_ComptrollerInterface_$1932_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_ComptrollerInterface_$1932_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function convert_t_contract$_PriceOracleInterface_$1942_to_t_address(value) -> converted {\n        converted := convert_t_contract$_PriceOracleInterface_$1942_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_PriceOracleInterface_$1942_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 7,
       "language": "Yul",
       "name": "#utility.yul"
@@ -3111,9 +3111,9 @@
   "sourceMap": "285:6169:2:-:0;;;431:275;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;584:12;549:11;;:48;;;;;;;;;;;;;;;;;;642:12;607:11;;:48;;;;;;;;;;;;;;;;;;686:12;665:4;;:34;;;;;;;;;;;;;;;;;;431:275;;;285:6169;;7:143:7;;95:6;89:13;80:22;;111:33;138:5;111:33;:::i;:::-;70:80;;;;:::o;156:596::-;;;;309:2;297:9;288:7;284:23;280:32;277:2;;;325:1;322;315:12;277:2;368:1;393:64;449:7;440:6;429:9;425:22;393:64;:::i;:::-;383:74;;339:128;506:2;532:64;588:7;579:6;568:9;564:22;532:64;:::i;:::-;522:74;;477:129;645:2;671:64;727:7;718:6;707:9;703:22;671:64;:::i;:::-;661:74;;616:129;267:485;;;;;:::o;758:96::-;;824:24;842:5;824:24;:::i;:::-;813:35;;803:51;;;:::o;860:126::-;;937:42;930:5;926:54;915:65;;905:81;;;:::o;992:122::-;1065:24;1083:5;1065:24;:::i;:::-;1058:5;1055:35;1045:2;;1104:1;1101;1094:12;1045:2;1035:79;:::o;285:6169:2:-;;;;;;;",
   "deployedSourceMap": "285:6169:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;354:39;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;3278:109;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;309:39;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;3393:256;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;399:25;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;5768:231;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;354:39;;;;;;;;;;;;;:::o;3278:109::-;3326:7;3352:11;;;;;;;;;;;:26;;;:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3345:35;;3278:109;:::o;309:39::-;;;;;;;;;;;;:::o;3393:256::-;3441:7;3460:19;3482:17;:15;:17::i;:::-;3460:39;;3509:16;3535:11;3509:38;;3557:19;3579:9;:19;;;3607:4;3579:34;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3557:56;;3631:11;3624:18;;;;;3393:256;:::o;399:25::-;;;;;;;;;;;;;:::o;5768:231::-;5865:7;5888:23;5914:11;;;;;;;;;;;:30;;;5945:13;5914:45;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;5888:71;;5977:15;5970:22;;;5768:231;;;:::o;7:139:7:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:143::-;;240:6;234:13;225:22;;256:33;283:5;256:33;:::i;:::-;215:80;;;;:::o;301:143::-;;389:6;383:13;374:22;;405:33;432:5;405:33;:::i;:::-;364:80;;;;:::o;450:262::-;;558:2;546:9;537:7;533:23;529:32;526:2;;;574:1;571;564:12;526:2;617:1;642:53;687:7;678:6;667:9;663:22;642:53;:::i;:::-;632:63;;588:117;516:196;;;;:::o;718:284::-;;837:2;825:9;816:7;812:23;808:32;805:2;;;853:1;850;843:12;805:2;896:1;921:64;977:7;968:6;957:9;953:22;921:64;:::i;:::-;911:74;;867:128;795:207;;;;:::o;1008:284::-;;1127:2;1115:9;1106:7;1102:23;1098:32;1095:2;;;1143:1;1140;1133:12;1095:2;1186:1;1211:64;1267:7;1258:6;1247:9;1243:22;1211:64;:::i;:::-;1201:74;;1157:128;1085:207;;;;:::o;1298:118::-;1385:24;1403:5;1385:24;:::i;:::-;1380:3;1373:37;1363:53;;:::o;1422:171::-;1529:57;1580:5;1529:57;:::i;:::-;1524:3;1517:70;1507:86;;:::o;1599:189::-;1715:66;1775:5;1715:66;:::i;:::-;1710:3;1703:79;1693:95;;:::o;1794:189::-;1910:66;1970:5;1910:66;:::i;:::-;1905:3;1898:79;1888:95;;:::o;1989:118::-;2076:24;2094:5;2076:24;:::i;:::-;2071:3;2064:37;2054:53;;:::o;2113:222::-;;2244:2;2233:9;2229:18;2221:26;;2257:71;2325:1;2314:9;2310:17;2301:6;2257:71;:::i;:::-;2211:124;;;;:::o;2341:262::-;;2492:2;2481:9;2477:18;2469:26;;2505:91;2593:1;2582:9;2578:17;2569:6;2505:91;:::i;:::-;2459:144;;;;:::o;2609:280::-;;2769:2;2758:9;2754:18;2746:26;;2782:100;2879:1;2868:9;2864:17;2855:6;2782:100;:::i;:::-;2736:153;;;;:::o;2895:280::-;;3055:2;3044:9;3040:18;3032:26;;3068:100;3165:1;3154:9;3150:17;3141:6;3068:100;:::i;:::-;3022:153;;;;:::o;3181:222::-;;3312:2;3301:9;3297:18;3289:26;;3325:71;3393:1;3382:9;3378:17;3369:6;3325:71;:::i;:::-;3279:124;;;;:::o;3409:96::-;;3475:24;3493:5;3475:24;:::i;:::-;3464:35;;3454:51;;;:::o;3511:126::-;;3588:42;3581:5;3577:54;3566:65;;3556:81;;;:::o;3643:77::-;;3709:5;3698:16;;3688:32;;;:::o;3726:166::-;;3829:57;3880:5;3829:57;:::i;:::-;3816:70;;3806:86;;;:::o;3898:133::-;;4001:24;4019:5;4001:24;:::i;:::-;3988:37;;3978:53;;;:::o;4037:184::-;;4149:66;4209:5;4149:66;:::i;:::-;4136:79;;4126:95;;;:::o;4227:142::-;;4339:24;4357:5;4339:24;:::i;:::-;4326:37;;4316:53;;;:::o;4375:184::-;;4487:66;4547:5;4487:66;:::i;:::-;4474:79;;4464:95;;;:::o;4565:142::-;;4677:24;4695:5;4677:24;:::i;:::-;4664:37;;4654:53;;;:::o;4713:122::-;4786:24;4804:5;4786:24;:::i;:::-;4779:5;4776:35;4766:2;;4825:1;4822;4815:12;4766:2;4756:79;:::o;4841:122::-;4914:24;4932:5;4914:24;:::i;:::-;4907:5;4904:35;4894:2;;4953:1;4950;4943:12;4894:2;4884:79;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.3;\npragma experimental ABIEncoderV2;\n\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\nimport \"./CTokenInterface.sol\";\nimport \"./CETHInterface.sol\";\nimport \"./ComptrollerInterface.sol\";\nimport \"./PriceOracleInterface.sol\";\n\ncontract Compound {\n    ComptrollerInterface public comptroller;\n    PriceOracleInterface public priceOracle;\n    CETHInterface public cETH;\n\n    constructor(\n        address _comptroller,\n        address _priceOracle,\n        address _cETHAddress\n    ) {\n        comptroller = ComptrollerInterface(_comptroller);\n        priceOracle = PriceOracleInterface(_priceOracle);\n        cETH = CETHInterface(_cETHAddress);\n    }\n\n    function _supply(address cTokenAddress, uint256 underlyingAmount) internal {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        address underlyingAddress = cTokenInstance.underlying();\n        IERC20 tokenInstance = IERC20(underlyingAddress);\n\n        tokenInstance.approve(cTokenAddress, underlyingAmount);\n        uint256 result = cTokenInstance.mint(underlyingAmount);\n\n        require(result == 0, \"cToken.mint() failed.\");\n    }\n\n    function _supplyETH(uint256 underlyingAmount) internal {\n        cETH.mint{value: underlyingAmount}();\n    }\n\n    function _redeem(address cTokenAddress, uint256 redeemAmount) internal {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 result = cTokenInstance.redeemUnderlying(redeemAmount);\n\n        require(result == 0, \"cToken.redeem() failed.\");\n    }\n\n    function _redeemETH(uint256 redeemAmount) internal {\n        cETH.redeemUnderlying(redeemAmount);\n    }\n\n    function _borrow(address cTokenAddress, uint256 borrowAmount) internal {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 result = cTokenInstance.borrow(borrowAmount);\n\n        require(result == 0, \"cToken.borrow() failed.\");\n    }\n\n    function _borrowETH(uint256 borrowAmount) internal {\n        cETH.borrow(borrowAmount);\n    }\n\n    function _repayBorrow(address cTokenAddress, uint256 underlyingAmount)\n        internal\n    {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        address underlyingAddress = cTokenInstance.underlying();\n        IERC20 tokenInstance = IERC20(underlyingAddress);\n        tokenInstance.approve(cTokenAddress, underlyingAmount);\n        uint256 result = cTokenInstance.repayBorrow(underlyingAmount);\n\n        require(result == 0, \"cToken.repayBorrow() failed.\");\n    }\n\n    function _repayBorrowETH(uint256 underlyingAmount) internal {\n        cETH.repayBorrow{value: underlyingAmount}();\n    }\n\n    function _enterMarket(address cTokenAddress) internal {\n        address[] memory markets = new address[](1);\n        markets[0] = cTokenAddress;\n        uint256[] memory results = comptroller.enterMarkets(markets);\n\n        require(results[0] == 0, \"Comptroller.enterMarkets() failed.\");\n    }\n\n    function _exitMarket(address cTokenAddress) internal {\n        uint256 result = comptroller.exitMarket(cTokenAddress);\n\n        require(result == 0, \"Comptroller.exitMarket() failed.\");\n    }\n\n    function _claimComp() internal {\n        comptroller.claimComp(address(this));\n    }\n\n    function _getCompAddress() public view returns (address) {\n        return comptroller.getCompAddress();\n    }\n\n    function _getCompBalance() public view returns (uint256) {\n        address compAddress = _getCompAddress();\n        IERC20 compToken = IERC20(compAddress);\n        uint256 compBalance = compToken.balanceOf(address(this));\n\n        return compBalance;\n    }\n\n    function _getMaxBorrow(address cTokenAddress)\n        internal\n        view\n        returns (uint256)\n    {\n        (uint256 error, uint256 liquidity, uint256 shortfall) =\n            comptroller.getAccountLiquidity(address(this));\n\n        require(error == 0, \"Comptroller.getAccountLiquidity() failed.\");\n        require(shortfall == 0, \"account underwater\");\n        require(liquidity > 0, \"account has excess collateral\");\n\n        uint256 underlyingPrice = _getUnderlyingPrice(cTokenAddress);\n        uint256 maxBorrowUnderlying = liquidity / underlyingPrice;\n\n        return maxBorrowUnderlying;\n    }\n\n    function _getBorrowLimit() internal view returns (uint256) {\n        (uint256 result, uint256 liquidity, uint256 shortfall) =\n            comptroller.getAccountLiquidity(address(this));\n        require(result == 0, \"comptroller#getAccountLiquidity() failed.\");\n        require(shortfall == 0, \"account underwater\");\n        require(liquidity > 0, \"account does not have collateral\");\n\n        return liquidity;\n    }\n\n    function _getSupplyBalance(address cTokenAddress)\n        internal\n        view\n        returns (uint256)\n    {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 supplyBalance = cTokenInstance.balanceOf(address(this));\n\n        return supplyBalance;\n    }\n\n    function _getBorrowBalance(address cTokenAddress)\n        internal\n        returns (uint256)\n    {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 borrowBalance =\n            cTokenInstance.borrowBalanceCurrent(address(this));\n\n        return borrowBalance;\n    }\n\n    function _getExchangeRate(address cTokenAddress)\n        internal\n        returns (uint256)\n    {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 exchangeRate = cTokenInstance.exchangeRateCurrent();\n\n        return exchangeRate;\n    }\n\n    function _getUnderlyingAddress(address cTokenAddress)\n        internal\n        view\n        returns (address)\n    {\n        return CTokenInterface(cTokenAddress).underlying();\n    }\n\n    function _getUnderlyingPrice(address cTokenAddress)\n        public\n        view\n        returns (uint256)\n    {\n        uint256 underlyingPrice = priceOracle.getUnderlyingPrice(cTokenAddress);\n\n        return underlyingPrice;\n    }\n\n    function _getUnderlyingBalance(address cTokenAddress)\n        internal\n        returns (uint256)\n    {\n        CTokenInterface cTokenInstance = CTokenInterface(cTokenAddress);\n        uint256 underlyingBalance =\n            cTokenInstance.balanceOfUnderlying(address(this));\n\n        return underlyingBalance;\n    }\n\n    function _getUnderlyingETHBalance() internal returns (uint256) {\n        return cETH.balanceOfUnderlying(address(this));\n    }\n}\n",
-  "sourcePath": "/Users/ryan/Desktop/Projects/compound/contracts/Compound.sol",
+  "sourcePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/Compound.sol",
   "ast": {
-    "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/Compound.sol",
+    "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/Compound.sol",
     "exportedSymbols": {
       "CETHInterface": [
         29
@@ -3125,13 +3125,13 @@
         819
       ],
       "ComptrollerInterface": [
-        1957
+        1932
       ],
       "IERC20": [
-        2045
+        2020
       ],
       "PriceOracleInterface": [
-        1967
+        1942
       ]
     },
     "id": 820,
@@ -3164,13 +3164,13 @@
         "id": 221,
         "nodeType": "ImportDirective",
         "scope": 820,
-        "sourceUnit": 2046,
+        "sourceUnit": 2021,
         "src": "91:56:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CTokenInterface.sol",
+        "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CTokenInterface.sol",
         "file": "./CTokenInterface.sol",
         "id": 222,
         "nodeType": "ImportDirective",
@@ -3181,7 +3181,7 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol",
+        "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol",
         "file": "./CETHInterface.sol",
         "id": 223,
         "nodeType": "ImportDirective",
@@ -3192,23 +3192,23 @@
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/ComptrollerInterface.sol",
+        "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/ComptrollerInterface.sol",
         "file": "./ComptrollerInterface.sol",
         "id": 224,
         "nodeType": "ImportDirective",
         "scope": 820,
-        "sourceUnit": 1958,
+        "sourceUnit": 1933,
         "src": "210:36:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+        "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol",
         "file": "./PriceOracleInterface.sol",
         "id": 225,
         "nodeType": "ImportDirective",
         "scope": 820,
-        "sourceUnit": 1968,
+        "sourceUnit": 1943,
         "src": "247:36:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3238,17 +3238,17 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+              "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
               "typeString": "contract ComptrollerInterface"
             },
             "typeName": {
               "id": 226,
               "name": "ComptrollerInterface",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1957,
+              "referencedDeclaration": 1932,
               "src": "309:20:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                 "typeString": "contract ComptrollerInterface"
               }
             },
@@ -3266,17 +3266,17 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+              "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
               "typeString": "contract PriceOracleInterface"
             },
             "typeName": {
               "id": 228,
               "name": "PriceOracleInterface",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1967,
+              "referencedDeclaration": 1942,
               "src": "354:20:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+                "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
                 "typeString": "contract PriceOracleInterface"
               }
             },
@@ -3331,7 +3331,7 @@
                       "referencedDeclaration": 227,
                       "src": "549:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                        "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                         "typeString": "contract ComptrollerInterface"
                       }
                     },
@@ -3363,10 +3363,10 @@
                         "name": "ComptrollerInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1957,
+                        "referencedDeclaration": 1932,
                         "src": "563:20:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ComptrollerInterface_$1957_$",
+                          "typeIdentifier": "t_type$_t_contract$_ComptrollerInterface_$1932_$",
                           "typeString": "type(contract ComptrollerInterface)"
                         }
                       },
@@ -3381,13 +3381,13 @@
                       "src": "563:34:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                        "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                         "typeString": "contract ComptrollerInterface"
                       }
                     },
                     "src": "549:48:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                      "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                       "typeString": "contract ComptrollerInterface"
                     }
                   },
@@ -3410,7 +3410,7 @@
                       "referencedDeclaration": 229,
                       "src": "607:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+                        "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
                         "typeString": "contract PriceOracleInterface"
                       }
                     },
@@ -3442,10 +3442,10 @@
                         "name": "PriceOracleInterface",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1967,
+                        "referencedDeclaration": 1942,
                         "src": "621:20:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_PriceOracleInterface_$1967_$",
+                          "typeIdentifier": "t_type$_t_contract$_PriceOracleInterface_$1942_$",
                           "typeString": "type(contract PriceOracleInterface)"
                         }
                       },
@@ -3460,13 +3460,13 @@
                       "src": "621:34:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+                        "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
                         "typeString": "contract PriceOracleInterface"
                       }
                     },
                     "src": "607:48:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+                      "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
                       "typeString": "contract PriceOracleInterface"
                     }
                   },
@@ -3850,17 +3850,17 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2045",
+                        "typeIdentifier": "t_contract$_IERC20_$2020",
                         "typeString": "contract IERC20"
                       },
                       "typeName": {
                         "id": 278,
                         "name": "IERC20",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2045,
+                        "referencedDeclaration": 2020,
                         "src": "935:6:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -3894,10 +3894,10 @@
                       "name": "IERC20",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2045,
+                      "referencedDeclaration": 2020,
                       "src": "958:6:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2045_$",
+                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2020_$",
                         "typeString": "type(contract IERC20)"
                       }
                     },
@@ -3912,7 +3912,7 @@
                     "src": "958:25:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2045",
+                      "typeIdentifier": "t_contract$_IERC20_$2020",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -3966,7 +3966,7 @@
                         "referencedDeclaration": 279,
                         "src": "994:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -3977,7 +3977,7 @@
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2014,
+                      "referencedDeclaration": 1989,
                       "src": "994:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -5635,17 +5635,17 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2045",
+                        "typeIdentifier": "t_contract$_IERC20_$2020",
                         "typeString": "contract IERC20"
                       },
                       "typeName": {
                         "id": 418,
                         "name": "IERC20",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2045,
+                        "referencedDeclaration": 2020,
                         "src": "2307:6:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -5679,10 +5679,10 @@
                       "name": "IERC20",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2045,
+                      "referencedDeclaration": 2020,
                       "src": "2330:6:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2045_$",
+                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2020_$",
                         "typeString": "type(contract IERC20)"
                       }
                     },
@@ -5697,7 +5697,7 @@
                     "src": "2330:25:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2045",
+                      "typeIdentifier": "t_contract$_IERC20_$2020",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -5751,7 +5751,7 @@
                         "referencedDeclaration": 419,
                         "src": "2365:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -5762,7 +5762,7 @@
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2014,
+                      "referencedDeclaration": 1989,
                       "src": "2365:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -6485,7 +6485,7 @@
                         "referencedDeclaration": 227,
                         "src": "2872:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -6496,7 +6496,7 @@
                       "lValueRequested": false,
                       "memberName": "enterMarkets",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1743,
+                      "referencedDeclaration": 1718,
                       "src": "2872:24:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_address_$dyn_memory_ptr_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
@@ -6783,7 +6783,7 @@
                         "referencedDeclaration": 227,
                         "src": "3071:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -6794,7 +6794,7 @@
                       "lValueRequested": false,
                       "memberName": "exitMarket",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1750,
+                      "referencedDeclaration": 1725,
                       "src": "3071:22:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$_t_uint256_$",
@@ -7064,7 +7064,7 @@
                         "referencedDeclaration": 227,
                         "src": "3229:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -7075,7 +7075,7 @@
                       "lValueRequested": false,
                       "memberName": "claimComp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1940,
+                      "referencedDeclaration": 1915,
                       "src": "3229:21:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -7146,7 +7146,7 @@
                         "referencedDeclaration": 227,
                         "src": "3352:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -7157,7 +7157,7 @@
                       "lValueRequested": false,
                       "memberName": "getCompAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1945,
+                      "referencedDeclaration": 1920,
                       "src": "3352:26:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
@@ -7328,17 +7328,17 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2045",
+                        "typeIdentifier": "t_contract$_IERC20_$2020",
                         "typeString": "contract IERC20"
                       },
                       "typeName": {
                         "id": 554,
                         "name": "IERC20",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2045,
+                        "referencedDeclaration": 2020,
                         "src": "3509:6:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -7372,10 +7372,10 @@
                       "name": "IERC20",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2045,
+                      "referencedDeclaration": 2020,
                       "src": "3528:6:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2045_$",
+                        "typeIdentifier": "t_type$_t_contract$_IERC20_$2020_$",
                         "typeString": "type(contract IERC20)"
                       }
                     },
@@ -7390,7 +7390,7 @@
                     "src": "3528:19:2",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2045",
+                      "typeIdentifier": "t_contract$_IERC20_$2020",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -7504,7 +7504,7 @@
                         "referencedDeclaration": 555,
                         "src": "3579:9:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2045",
+                          "typeIdentifier": "t_contract$_IERC20_$2020",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -7515,7 +7515,7 @@
                       "lValueRequested": false,
                       "memberName": "balanceOf",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1984,
+                      "referencedDeclaration": 1959,
                       "src": "3579:19:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -7779,7 +7779,7 @@
                         "referencedDeclaration": 227,
                         "src": "3839:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -7790,7 +7790,7 @@
                       "lValueRequested": false,
                       "memberName": "getAccountLiquidity",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1956,
+                      "referencedDeclaration": 1931,
                       "src": "3839:31:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$_t_uint256_$_t_uint256_$",
@@ -8573,7 +8573,7 @@
                         "referencedDeclaration": 227,
                         "src": "4406:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1957",
+                          "typeIdentifier": "t_contract$_ComptrollerInterface_$1932",
                           "typeString": "contract ComptrollerInterface"
                         }
                       },
@@ -8584,7 +8584,7 @@
                       "lValueRequested": false,
                       "memberName": "getAccountLiquidity",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1956,
+                      "referencedDeclaration": 1931,
                       "src": "4406:31:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$_t_uint256_$_t_uint256_$",
@@ -10191,7 +10191,7 @@
                         "referencedDeclaration": 229,
                         "src": "5914:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_PriceOracleInterface_$1967",
+                          "typeIdentifier": "t_contract$_PriceOracleInterface_$1942",
                           "typeString": "contract PriceOracleInterface"
                         }
                       },
@@ -10202,7 +10202,7 @@
                       "lValueRequested": false,
                       "memberName": "getUnderlyingPrice",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1966,
+                      "referencedDeclaration": 1941,
                       "src": "5914:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
@@ -10841,7 +10841,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/Compound.sol",
+      "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/Compound.sol",
       "exportedSymbols": {
         "CETHInterface": [
           29
@@ -10853,13 +10853,13 @@
           819
         ],
         "ComptrollerInterface": [
-          1957
+          1932
         ],
         "IERC20": [
-          2045
+          2020
         ],
         "PriceOracleInterface": [
-          1967
+          1942
         ]
       },
       "license": "MIT"
@@ -10891,7 +10891,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 2046,
+          "SourceUnit": 2021,
           "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
           "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
           "scope": 820,
@@ -10907,7 +10907,7 @@
       {
         "attributes": {
           "SourceUnit": 218,
-          "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CTokenInterface.sol",
+          "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CTokenInterface.sol",
           "file": "./CTokenInterface.sol",
           "scope": 820,
           "symbolAliases": [
@@ -10922,7 +10922,7 @@
       {
         "attributes": {
           "SourceUnit": 30,
-          "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol",
+          "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol",
           "file": "./CETHInterface.sol",
           "scope": 820,
           "symbolAliases": [
@@ -10936,8 +10936,8 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1958,
-          "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/ComptrollerInterface.sol",
+          "SourceUnit": 1933,
+          "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/ComptrollerInterface.sol",
           "file": "./ComptrollerInterface.sol",
           "scope": 820,
           "symbolAliases": [
@@ -10951,8 +10951,8 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1968,
-          "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+          "SourceUnit": 1943,
+          "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol",
           "file": "./PriceOracleInterface.sol",
           "scope": 820,
           "symbolAliases": [
@@ -10998,7 +10998,7 @@
               {
                 "attributes": {
                   "name": "ComptrollerInterface",
-                  "referencedDeclaration": 1957,
+                  "referencedDeclaration": 1932,
                   "type": "contract ComptrollerInterface"
                 },
                 "id": 226,
@@ -11026,7 +11026,7 @@
               {
                 "attributes": {
                   "name": "PriceOracleInterface",
-                  "referencedDeclaration": 1967,
+                  "referencedDeclaration": 1942,
                   "type": "contract PriceOracleInterface"
                 },
                 "id": 228,
@@ -11233,7 +11233,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1957,
+                                  "referencedDeclaration": 1932,
                                   "type": "type(contract ComptrollerInterface)",
                                   "value": "ComptrollerInterface"
                                 },
@@ -11320,7 +11320,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1967,
+                                  "referencedDeclaration": 1942,
                                   "type": "type(contract PriceOracleInterface)",
                                   "value": "PriceOracleInterface"
                                 },
@@ -11748,7 +11748,7 @@
                           {
                             "attributes": {
                               "name": "IERC20",
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "contract IERC20"
                             },
                             "id": 278,
@@ -11786,7 +11786,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "type(contract IERC20)",
                               "value": "IERC20"
                             },
@@ -11851,7 +11851,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "approve",
-                              "referencedDeclaration": 2014,
+                              "referencedDeclaration": 1989,
                               "type": "function (address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -13707,7 +13707,7 @@
                           {
                             "attributes": {
                               "name": "IERC20",
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "contract IERC20"
                             },
                             "id": 418,
@@ -13745,7 +13745,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "type(contract IERC20)",
                               "value": "IERC20"
                             },
@@ -13810,7 +13810,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "approve",
-                              "referencedDeclaration": 2014,
+                              "referencedDeclaration": 1989,
                               "type": "function (address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -14596,7 +14596,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "enterMarkets",
-                              "referencedDeclaration": 1743,
+                              "referencedDeclaration": 1718,
                               "type": "function (address[] memory) external returns (uint256[] memory)"
                             },
                             "children": [
@@ -14916,7 +14916,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "exitMarket",
-                              "referencedDeclaration": 1750,
+                              "referencedDeclaration": 1725,
                               "type": "function (address) external returns (uint256)"
                             },
                             "children": [
@@ -15153,7 +15153,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "claimComp",
-                              "referencedDeclaration": 1940,
+                              "referencedDeclaration": 1915,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -15352,7 +15352,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "getCompAddress",
-                              "referencedDeclaration": 1945,
+                              "referencedDeclaration": 1920,
                               "type": "function () view external returns (address)"
                             },
                             "children": [
@@ -15556,7 +15556,7 @@
                           {
                             "attributes": {
                               "name": "IERC20",
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "contract IERC20"
                             },
                             "id": 554,
@@ -15594,7 +15594,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2045,
+                              "referencedDeclaration": 2020,
                               "type": "type(contract IERC20)",
                               "value": "IERC20"
                             },
@@ -15686,7 +15686,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "balanceOf",
-                              "referencedDeclaration": 1984,
+                              "referencedDeclaration": 1959,
                               "type": "function (address) view external returns (uint256)"
                             },
                             "children": [
@@ -16011,7 +16011,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "getAccountLiquidity",
-                              "referencedDeclaration": 1956,
+                              "referencedDeclaration": 1931,
                               "type": "function (address) view external returns (uint256,uint256,uint256)"
                             },
                             "children": [
@@ -16825,7 +16825,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "getAccountLiquidity",
-                              "referencedDeclaration": 1956,
+                              "referencedDeclaration": 1931,
                               "type": "function (address) view external returns (uint256,uint256,uint256)"
                             },
                             "children": [
@@ -18660,7 +18660,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "getUnderlyingPrice",
-                              "referencedDeclaration": 1966,
+                              "referencedDeclaration": 1941,
                               "type": "function (address) view external returns (uint256)"
                             },
                             "children": [
@@ -19313,7 +19313,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-16T06:41:45.212Z",
+  "updatedAt": "2021-04-22T22:48:43.051Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

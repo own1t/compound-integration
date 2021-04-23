@@ -73,7 +73,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOfUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"borrowAmount\",\"type\":\"uint256\"}],\"name\":\"borrow\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"redeemAmount\",\"type\":\"uint256\"}],\"name\":\"redeemUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repayBorrow\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol\":\"CETHInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol\":{\"keccak256\":\"0x6b9786fbc5869f6a740752ab4468a33c24c76a6f9c6c0261eca8914b2968f10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5125d54e68cd8e25ce990c50757219874a8e05cb352954173561075cf635b784\",\"dweb:/ipfs/QmeAM3yEMTJh4WF19MPrcMhEf4Xgj5YJYzGXGpeXJSs91X\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOfUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"borrowAmount\",\"type\":\"uint256\"}],\"name\":\"borrow\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"redeemAmount\",\"type\":\"uint256\"}],\"name\":\"redeemUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repayBorrow\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol\":\"CETHInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol\":{\"keccak256\":\"0x6b9786fbc5869f6a740752ab4468a33c24c76a6f9c6c0261eca8914b2968f10a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5125d54e68cd8e25ce990c50757219874a8e05cb352954173561075cf635b784\",\"dweb:/ipfs/QmeAM3yEMTJh4WF19MPrcMhEf4Xgj5YJYzGXGpeXJSs91X\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -82,9 +82,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.3;\n\ninterface CETHInterface {\n    function mint() external payable;\n\n    function redeemUnderlying(uint256 redeemAmount) external returns (uint256);\n\n    function borrow(uint256 borrowAmount) external returns (uint256);\n\n    function repayBorrow() external payable;\n\n    function balanceOfUnderlying(address owner) external returns (uint256);\n}\n",
-  "sourcePath": "/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol",
+  "sourcePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol",
   "ast": {
-    "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol",
+    "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol",
     "exportedSymbols": {
       "CETHInterface": [
         29
@@ -420,7 +420,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/CETHInterface.sol",
+      "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/CETHInterface.sol",
       "exportedSymbols": {
         "CETHInterface": [
           29
@@ -824,7 +824,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-14T01:41:02.516Z",
+  "updatedAt": "2021-04-22T20:20:37.160Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

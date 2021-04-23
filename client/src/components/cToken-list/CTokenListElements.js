@@ -57,6 +57,15 @@ export const CTokenItem = styled.li`
   transition: 0.5s;
   text-align: center;
 
+  a {
+    color: #04d394;
+    text-decoration: none;
+
+    &:hover {
+      color: #18ad7b;
+    }
+  }
+
   > span:nth-child(1) {
     width: 20%;
   }

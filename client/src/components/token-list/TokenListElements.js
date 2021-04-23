@@ -14,10 +14,8 @@ export const TokenListWrapper = styled.ul`
   margin: 10px auto 0;
   padding: 20px;
   box-sizing: border-box;
-  /* background: rgba(0, 0, 0, 0.1); */
-  /* box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2); */
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8); */
   border-radius: 5px;
   overflow: hidden;
 
@@ -31,12 +29,20 @@ export const TokenItem = styled.li`
   align-items: center;
 
   width: 90%;
-  /* background: rgba(255, 255, 255, 0.1); */
   background: #000;
   color: #fff;
   margin: 5px auto;
   padding: 10px 20px;
   transition: 0.5s;
+
+  a {
+    color: #04d394;
+    text-decoration: none;
+
+    &:hover {
+      color: #18ad7b;
+    }
+  }
 
   > span:nth-child(1) {
     width: 7%;

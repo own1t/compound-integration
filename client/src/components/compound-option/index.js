@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { useSelector } from "react-redux";
 import { GET_USER } from "../../states/appSlice";
@@ -26,10 +26,6 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
   const [borrowAmount, setBorrowAmount] = useState(0);
   const [repayAmount, setRepayAmount] = useState(0);
 
-  useEffect(() => {
-    // console.log(selectedToken);
-  }, [selectedToken]);
-
   const handleSupply = async (e) => {
     e.preventDefault();
 
@@ -40,7 +36,7 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
         .supply(selectedToken, tokenAmount)
         .send({ from: user });
 
-      setSupplyAmount(0);
+      // setSupplyAmount(0);
     } catch (err) {
       console.log(err);
     }
@@ -56,7 +52,7 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
         .redeem(selectedToken, tokenAmount)
         .send({ from: user });
 
-      setRedeemAmount(0);
+      // setRedeemAmount(0);
     } catch (err) {
       console.log(err);
     }
@@ -72,7 +68,7 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
         .borrow(selectedToken, tokenAmount)
         .send({ from: user });
 
-      setBorrowAmount(0);
+      // setBorrowAmount(0);
     } catch (err) {
       console.log(err);
     }
@@ -88,7 +84,7 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
         .repayBorrow(selectedToken, tokenAmount)
         .send({ from: user });
 
-      setRepayAmount(0);
+      // setRepayAmount(0);
     } catch (err) {
       console.log(err);
     }
@@ -113,7 +109,6 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
             </Select>
 
             <input
-              type="number"
               value={supplyAmount}
               onChange={(e) => setSupplyAmount(e.target.value)}
               placeholder="Amount"
@@ -134,7 +129,6 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
             </Select>
 
             <input
-              type="number"
               value={redeemAmount}
               onChange={(e) => setRedeemAmount(e.target.value)}
               placeholder="Amount"
@@ -158,7 +152,6 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
             </Select>
 
             <input
-              type="number"
               value={borrowAmount}
               onChange={(e) => setBorrowAmount(e.target.value)}
               placeholder="Amount"
@@ -179,7 +172,6 @@ const CompoundOption = ({ web3, contracts, toggle }) => {
             </Select>
 
             <input
-              type="number"
               value={repayAmount}
               onChange={(e) => setRepayAmount(e.target.value)}
               placeholder="Amount"

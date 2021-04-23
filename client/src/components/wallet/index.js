@@ -42,11 +42,14 @@ const Wallet = ({ web3, contracts }) => {
         ticker: web3.utils.hexToUtf8(token.ticker),
       }));
 
-      const balance = await getBalance(tokens[0].ticker);
+      if (tokens.length > 0) {
+        const balance = await getBalance(tokens[0].ticker);
+
+        setSelectedToken(tokens[0].ticker);
+        setBalance(balance);
+      }
 
       setTokens(tokens);
-      setSelectedToken(tokens[0].ticker);
-      setBalance(balance);
     };
     init();
   }, []);
@@ -119,7 +122,6 @@ const Wallet = ({ web3, contracts }) => {
           </InputHeader>
           <ButtonWrapper>
             <Select onChange={(e) => setSelectedToken(e.target.value)}>
-              <Option>ASSET</Option>
               {tokens.map((token, idx) => (
                 <Option key={idx} value={token.ticker}>
                   {token.ticker}
@@ -165,11 +167,7 @@ const Wallet = ({ web3, contracts }) => {
             <label>Amount</label>
           </InputLabel>
           <InputBox>
-            <input
-              type="number"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-            />
+            <input value={amount} onChange={(e) => setAmount(e.target.value)} />
           </InputBox>
         </InputRow>
 

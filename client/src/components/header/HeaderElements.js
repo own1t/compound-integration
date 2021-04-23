@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   /* border: 1px solid red; */
 
-  /* 070a10 */
-  /* background: #000; */
   background: #0a0a0a;
   display: flex;
   justify-content: center;
@@ -87,7 +85,7 @@ export const NavBox = styled.div`
   }
 
   &:hover {
-    background: #0c111c;
+    background: rgba(0, 0, 0, 1);
 
     > h4 {
       color: #fff;

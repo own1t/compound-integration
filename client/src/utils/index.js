@@ -116,6 +116,7 @@ export const getCTokenData = async (web3, compound, cToken) => {
 };
 
 export const getCTokenBalances = async (web3, contracts, cToken) => {
+  const cTokenAddress = cToken.cTokenAddress;
   const cTokenSymbol = cToken.ticker;
 
   const supplyBalance = await contracts[cToken.ticker].methods
@@ -128,10 +129,10 @@ export const getCTokenBalances = async (web3, contracts, cToken) => {
     .getBorrowBalance(cToken.cTokenTicker)
     .call();
 
-  // const fixedBorrowBalance = borrowBalance / Math.pow(10, 8);
   const fixedBorrowBalance = web3.utils.fromWei(borrowBalance, "ether");
 
   return {
+    cTokenAddress,
     cTokenSymbol,
     supplyBalance,
     fixedSupplyBalance,

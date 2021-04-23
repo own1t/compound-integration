@@ -34,16 +34,18 @@ const TokenList = ({ web3, contracts }) => {
       );
 
       setCTokens(cTokens);
-      // console.log(cTokens);
     };
     init();
   }, [cTokens]);
 
   const handleEnterMarket = async (cToken) => {
     try {
+      const symbol = web3.utils.hexToUtf8(cToken);
+
       await contracts.compound.methods.enterMarket(cToken).send({ from: user });
 
       console.log("ENTER");
+      alert(`Market Enter for ${symbol} has proceeded`);
     } catch (err) {
       console.log(err);
     }
@@ -51,9 +53,12 @@ const TokenList = ({ web3, contracts }) => {
 
   const handleExitMarket = async (cToken) => {
     try {
+      const symbol = web3.utils.hexToUtf8(cToken);
+
       await contracts.compound.methods.exitMarket(cToken).send({ from: user });
 
       console.log("EXIT");
+      alert(`Market Exit for ${symbol} has proceeded`);
     } catch (err) {
       console.log(err);
     }
@@ -79,7 +84,13 @@ const TokenList = ({ web3, contracts }) => {
                 <TokenIndex>{idx + 1}</TokenIndex>
                 <TokenSymbol>{cToken.underlyingSymbol}</TokenSymbol>
                 <TokenAddress>
-                  {truncate(cToken.underlyingAddress, 25)}
+                  <a
+                    href={`//rinkeby.etherscan.io/address/${cToken.underlyingAddress}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {truncate(cToken.underlyingAddress, 25)}
+                  </a>
                 </TokenAddress>
                 <ExchangeRate>
                   {formatNumber(cToken.cTokensInOneUnderlying)}

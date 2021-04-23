@@ -37,31 +37,31 @@ const [cDAI, cBAT, cUSDC, cUSDT, cWBTC, cZRX] = [
   "cZRX",
 ].map((ticker) => web3.utils.fromAscii(ticker));
 
-module.exports = async (deployer) => {
-  deployer.deploy(
+module.exports = async function (deployer) {
+  await deployer.deploy(
     CompoundIntegration,
     comptrollerAddress,
     priceOracleAddress,
     cETHAddress
   );
 
-  const COMP_Integration = await CompoundIntegration.deployed();
+  const compound = await CompoundIntegration.deployed();
 
   await Promise.all([
-    COMP_Integration.addToken(DAI, daiAddress),
-    COMP_Integration.addToken(BAT, batAddress),
-    COMP_Integration.addToken(USDC, usdcAddress),
-    COMP_Integration.addToken(USDT, usdtAddress),
-    COMP_Integration.addToken(WBTC, wbtcAddress),
-    COMP_Integration.addToken(ZRX, zrxAddress),
+    compound.addToken(BAT, batAddress),
+    compound.addToken(DAI, daiAddress),
+    compound.addToken(USDC, usdcAddress),
+    compound.addToken(USDT, usdtAddress),
+    compound.addToken(WBTC, wbtcAddress),
+    compound.addToken(ZRX, zrxAddress),
   ]);
 
   await Promise.all([
-    COMP_Integration.addCToken(cDAI, cDaiAddress, DAI, 18),
-    COMP_Integration.addCToken(cBAT, cBatAddress, BAT, 18),
-    COMP_Integration.addCToken(cUSDC, cUsdcAddress, USDC, 6),
-    COMP_Integration.addCToken(cUSDT, cUsdtAddress, USDT, 18),
-    COMP_Integration.addCToken(cWBTC, cWbtcAddress, WBTC, 8),
-    COMP_Integration.addCToken(cZRX, cZrxAddress, ZRX, 18),
+    compound.addCToken(cBAT, cBatAddress, BAT, 18),
+    compound.addCToken(cDAI, cDaiAddress, DAI, 18),
+    compound.addCToken(cUSDC, cUsdcAddress, USDC, 6),
+    compound.addCToken(cUSDT, cUsdtAddress, USDT, 18),
+    compound.addCToken(cWBTC, cWbtcAddress, WBTC, 8),
+    compound.addCToken(cZRX, cZrxAddress, ZRX, 18),
   ]);
 };

@@ -20,6 +20,8 @@ import TokenOption from "../../../components/token-option";
 import CompoundOption from "../../../components/compound-option";
 
 const Dashboard = ({ web3, contracts }) => {
+  const [cTokenData, setCTokenData] = useState(undefined);
+
   const [tokenOptionToggle, setTokenOptionToggle] = useState(false);
   const [compoundOptionToggle, setCompoundOptionToggle] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -67,12 +69,20 @@ const Dashboard = ({ web3, contracts }) => {
 
       <Content>
         <ContentLeft>
-          <ProgressBar web3={web3} contracts={contracts} />
+          <ProgressBar
+            web3={web3}
+            contracts={contracts}
+            cTokenData={cTokenData}
+          />
           <TokenList web3={web3} contracts={contracts} />
         </ContentLeft>
 
         <ContentRight>
-          <CTokenList web3={web3} contracts={contracts} />
+          <CTokenList
+            web3={web3}
+            contracts={contracts}
+            setCTokenData={setCTokenData}
+          />
 
           <Wallet web3={web3} contracts={contracts} />
         </ContentRight>

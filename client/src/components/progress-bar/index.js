@@ -10,7 +10,7 @@ import {
 } from "./ProgressBarElements";
 import { formatNumber } from "../../utils";
 
-const ProgressBar = ({ contracts }) => {
+const ProgressBar = ({ contracts, cTokenData }) => {
   const [limitLeftPercentage, setLimitLeftPercentage] = useState(0);
 
   useEffect(() => {
@@ -23,32 +23,25 @@ const ProgressBar = ({ contracts }) => {
       const cTokens = rawCTokens.filter((cToken) => cToken.collateral === true);
 
       if (collateralCount > 0) {
-        // const maxBorrows = await Promise.all([
-        //   rawCTokens.map((cToken) =>
-        //     contracts.compound.methods.getMaxBorrow(cToken.cTokenTicker).call()
-        //   ),
-        // ]);
-
-        // const underlyingLimits = await Promise.all([
-        //   cTokens.map((cToken) => getUnderlyingLimit(cToken)),
-        // ]);
-
-        // console.log(maxBorrows);
-        // console.log(underlyingLimits);
-
         const maxBorrow = await contracts.compound.methods
           .getMaxBorrow(cTokens[0].cTokenTicker)
           .call();
+
         const maxLimit = await getUnderlyingLimit(cTokens[0]);
 
         const borrowed = maxLimit - maxBorrow;
         const percentage = borrowed / maxLimit;
 
-        setLimitLeftPercentage(percentage * 100);
+        if (percentage === 1 || percentage < 0) {
+          setLimitLeftPercentage(0);
+        } else {
+          setLimitLeftPercentage(percentage * 100);
+        }
       }
     };
+
     init();
-  }, []);
+  }, [cTokenData]);
 
   const getUnderlyingLimit = async (cToken) => {
     const underlyingBalance = await contracts.compound.methods
@@ -58,9 +51,9 @@ const ProgressBar = ({ contracts }) => {
     const fixedUnderlyingBalance =
       underlyingBalance / Math.pow(10, underlyingDecimals);
 
-    const limit = fixedUnderlyingBalance * 0.6;
+    const result = fixedUnderlyingBalance * 0.6;
 
-    return limit;
+    return result;
   };
 
   return (

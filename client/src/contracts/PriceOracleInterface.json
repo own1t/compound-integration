@@ -21,7 +21,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol\":\"PriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol\":{\"keccak256\":\"0xebcc617a00add4fa536e0d1d2599551ff5866b7c2284af2789e040b045af3f29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05d9c56615ae91034a3efa86c7ede3527c98ee64fa933b4c5d66be283c330fef\",\"dweb:/ipfs/QmWE9D5QpoqxPAULssVjpZieKCPbVQZN7ich9TxKAh8wnQ\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol\":\"PriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol\":{\"keccak256\":\"0xebcc617a00add4fa536e0d1d2599551ff5866b7c2284af2789e040b045af3f29\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05d9c56615ae91034a3efa86c7ede3527c98ee64fa933b4c5d66be283c330fef\",\"dweb:/ipfs/QmWE9D5QpoqxPAULssVjpZieKCPbVQZN7ich9TxKAh8wnQ\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -30,20 +30,20 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.3;\n\ninterface PriceOracleInterface {\n    function getUnderlyingPrice(address asset) external view returns (uint256);\n}\n",
-  "sourcePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+  "sourcePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol",
   "ast": {
-    "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+    "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol",
     "exportedSymbols": {
       "PriceOracleInterface": [
-        1986
+        2004
       ]
     },
-    "id": 1987,
+    "id": 2005,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1978,
+        "id": 1996,
         "literals": [
           "solidity",
           "^",
@@ -51,7 +51,7 @@
           ".3"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:7"
+        "src": "32:23:6"
       },
       {
         "abstract": false,
@@ -59,33 +59,33 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1986,
+        "id": 2004,
         "linearizedBaseContracts": [
-          1986
+          2004
         ],
         "name": "PriceOracleInterface",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "fc57d4df",
-            "id": 1985,
+            "id": 2003,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUnderlyingPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1981,
+              "id": 1999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1980,
+                  "id": 1998,
                   "mutability": "mutable",
                   "name": "asset",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1985,
-                  "src": "122:13:7",
+                  "scope": 2003,
+                  "src": "122:13:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -93,10 +93,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1979,
+                    "id": 1997,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "122:7:7",
+                    "src": "122:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -106,20 +106,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "121:15:7"
+              "src": "121:15:6"
             },
             "returnParameters": {
-              "id": 1984,
+              "id": 2002,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1983,
+                  "id": 2001,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1985,
-                  "src": "160:7:7",
+                  "scope": 2003,
+                  "src": "160:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -127,10 +127,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1982,
+                    "id": 2000,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "160:7:7",
+                    "src": "160:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -139,27 +139,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "159:9:7"
+              "src": "159:9:6"
             },
-            "scope": 1986,
-            "src": "94:75:7",
+            "scope": 2004,
+            "src": "94:75:6",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1987,
-        "src": "57:114:7"
+        "scope": 2005,
+        "src": "57:114:6"
       }
     ],
-    "src": "32:140:7"
+    "src": "32:140:6"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/ryan/Desktop/Projects/compound/contracts/PriceOracleInterface.sol",
+      "absolutePath": "/Users/ryan/Desktop/Projects/final/compound-integration/contracts/PriceOracleInterface.sol",
       "exportedSymbols": {
         "PriceOracleInterface": [
-          1986
+          2004
         ]
       },
       "license": "MIT"
@@ -174,9 +174,9 @@
             ".3"
           ]
         },
-        "id": 1978,
+        "id": 1996,
         "name": "PragmaDirective",
-        "src": "32:23:7"
+        "src": "32:23:6"
       },
       {
         "attributes": {
@@ -190,10 +190,10 @@
           "contractKind": "interface",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            1986
+            2004
           ],
           "name": "PriceOracleInterface",
-          "scope": 1987
+          "scope": 2005
         },
         "children": [
           {
@@ -206,7 +206,7 @@
                 null
               ],
               "name": "getUnderlyingPrice",
-              "scope": 1986,
+              "scope": 2004,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -219,7 +219,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "asset",
-                      "scope": 1985,
+                      "scope": 2003,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -232,19 +232,19 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 1979,
+                        "id": 1997,
                         "name": "ElementaryTypeName",
-                        "src": "122:7:7"
+                        "src": "122:7:6"
                       }
                     ],
-                    "id": 1980,
+                    "id": 1998,
                     "name": "VariableDeclaration",
-                    "src": "122:13:7"
+                    "src": "122:13:6"
                   }
                 ],
-                "id": 1981,
+                "id": 1999,
                 "name": "ParameterList",
-                "src": "121:15:7"
+                "src": "121:15:6"
               },
               {
                 "children": [
@@ -253,7 +253,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 1985,
+                      "scope": 2003,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -265,34 +265,34 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 1982,
+                        "id": 2000,
                         "name": "ElementaryTypeName",
-                        "src": "160:7:7"
+                        "src": "160:7:6"
                       }
                     ],
-                    "id": 1983,
+                    "id": 2001,
                     "name": "VariableDeclaration",
-                    "src": "160:7:7"
+                    "src": "160:7:6"
                   }
                 ],
-                "id": 1984,
+                "id": 2002,
                 "name": "ParameterList",
-                "src": "159:9:7"
+                "src": "159:9:6"
               }
             ],
-            "id": 1985,
+            "id": 2003,
             "name": "FunctionDefinition",
-            "src": "94:75:7"
+            "src": "94:75:6"
           }
         ],
-        "id": 1986,
+        "id": 2004,
         "name": "ContractDefinition",
-        "src": "57:114:7"
+        "src": "57:114:6"
       }
     ],
-    "id": 1987,
+    "id": 2005,
     "name": "SourceUnit",
-    "src": "32:140:7"
+    "src": "32:140:6"
   },
   "compiler": {
     "name": "solc",
@@ -300,7 +300,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-14T01:41:02.576Z",
+  "updatedAt": "2021-04-22T20:20:37.226Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

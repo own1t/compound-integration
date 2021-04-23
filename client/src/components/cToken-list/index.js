@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { useSelector } from "react-redux";
-import { GET_USER } from "../../states/appSlice";
-
 import {
   CTokenCard,
   CTokenCardContent,
@@ -12,18 +9,12 @@ import {
   CTokenSymbol,
   SupplyBalance,
   BorrowBalance,
-  InputRow,
-  InputHeader,
-  ButtonWrapper,
 } from "./CTokenListElements";
-import { Button } from "@material-ui/core";
 
 import { getCTokenBalances, formatNumber } from "../../utils";
 
-const CTokenList = ({ web3, contracts }) => {
-  const user = useSelector(GET_USER);
-
-  const [cTokens, setCTokens] = useState([]);
+const CTokenList = ({ web3, contracts, setCTokenData }) => {
+  const [cTokenBalances, setCTokenBalances] = useState([]);
 
   useEffect(() => {
     const init = async () => {
@@ -37,18 +28,11 @@ const CTokenList = ({ web3, contracts }) => {
         cTokens.map((cToken) => getCTokenBalances(web3, contracts, cToken))
       );
 
-      setCTokens(cTokenBalances);
+      setCTokenBalances(cTokenBalances);
+      setCTokenData(cTokenBalances);
     };
     init();
-  }, []);
-
-  const handleClaimComp = async () => {
-    try {
-      await contracts.compound.methods.claimComp().send({ from: user });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  }, [cTokenBalances]);
 
   return (
     <CTokenCard>
@@ -59,9 +43,17 @@ const CTokenList = ({ web3, contracts }) => {
             <SupplyBalance>Supply Balance</SupplyBalance>
             <BorrowBalance>Borrow Balance</BorrowBalance>
           </CTokenItemHeader>
-          {cTokens.map((cToken, idx) => (
+          {cTokenBalances.map((cToken, idx) => (
             <CTokenItem key={idx}>
-              <CTokenSymbol>{cToken.cTokenSymbol}</CTokenSymbol>
+              <CTokenSymbol>
+                <a
+                  href={`//rinkeby.etherscan.io/address/${cToken.cTokenAddress}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cToken.cTokenSymbol}
+                </a>
+              </CTokenSymbol>
               <SupplyBalance>
                 {formatNumber(cToken.fixedSupplyBalance)}
               </SupplyBalance>
@@ -71,13 +63,6 @@ const CTokenList = ({ web3, contracts }) => {
             </CTokenItem>
           ))}
         </CTokenListWrapper>
-
-        <InputRow>
-          <InputHeader></InputHeader>
-          <ButtonWrapper>
-            <Button onClick={handleClaimComp}>Claim COMP</Button>
-          </ButtonWrapper>
-        </InputRow>
       </CTokenCardContent>
     </CTokenCard>
   );

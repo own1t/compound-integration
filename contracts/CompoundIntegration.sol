@@ -3,9 +3,12 @@ pragma solidity ^0.7.3;
 pragma experimental ABIEncoderV2;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
 import "./Compound.sol";
 
 contract CompoundIntegration is Compound {
+    using SafeMath for uint256;
+
     struct Token {
         bytes32 ticker;
         address tokenAddress;
@@ -166,16 +169,10 @@ contract CompoundIntegration is Compound {
         external
         onlyOwner()
     {
-        uint256 underlyingBalance = _getUnderlyingBalance(cTokenAddress);
-        require(underlyingBalance >= redeemAmount, "not enough balance");
-
         _redeem(cTokenAddress, redeemAmount);
     }
 
     function redeemETH(uint256 redeemAmount) external onlyOwner() {
-        uint256 underlyingBalance = _getUnderlyingETHBalance();
-        require(underlyingBalance >= redeemAmount, "not enough balance");
-
         _redeemETH(redeemAmount);
     }
 
@@ -220,7 +217,7 @@ contract CompoundIntegration is Compound {
 
         cTokens[cTokenTicker].collateral = true;
         isCollateral[cTokenTicker] = true;
-        collateralCount++;
+        collateralCount = collateralCount.add(1);
     }
 
     function exitMarket(bytes32 cTokenTicker) external onlyOwner() {
@@ -228,7 +225,7 @@ contract CompoundIntegration is Compound {
 
         cTokens[cTokenTicker].collateral = false;
         isCollateral[cTokenTicker] = false;
-        collateralCount--;
+        collateralCount = collateralCount.sub(1);
     }
 
     function claimComp() public onlyOwner() {
