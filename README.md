@@ -20,4 +20,4 @@
 
 You can check the deployed application from <a href="https://compound-5991e.web.app/">here</a>.
 
-Check out the Video Demo from <a href="https://vimeo.com/manage/videos/540450303">here</a>.
+Check out the Video Demo from <a href="https://vimeo.com/540450303">here</a>.
